@@ -1,4 +1,3 @@
-require('clover')
-require('lualine').setup()
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox-material]])
+require('config.lazy')
+require('caesar')
+vim.cmd([[colorscheme habamax]])

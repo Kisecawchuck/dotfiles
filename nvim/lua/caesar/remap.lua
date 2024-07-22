@@ -2,7 +2,7 @@
 vim.g.mapleader = " "
 
 -- Explorer
-vim.keymap.set("n", "<leader>rn", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>mv", vim.cmd.Ex)
 
 -- Split Window
 vim.keymap.set("n", "ss", ":split<Return>", opts)
@@ -10,8 +10,6 @@ vim.keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- Tab Management
 vim.keymap.set("n", "<C-t>", ":tabnew<Return>")
-vim.keymap.set("n", "gn", "gt")
-vim.keymap.set("n", "gp", "g<S-t>")
 
 -- Move Window
 vim.keymap.set("n", "sh", "<C-w>h")
