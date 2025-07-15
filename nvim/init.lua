@@ -1,2 +1,2 @@
-require('config.lazy')
+require('lazy_init')
 require('caesar')
