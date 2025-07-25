@@ -1,0 +1,25 @@
+% Importando todos os pacotes
+\usepackage[portuguese]{babel}
+\usepackage{tikz, xcolor, hyperref, amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage[useregional]{datetime2}
+\usepackage{etoolbox}
+
+% Definindo o "header" e o "footer"
+\newcommand{\dia}{\DTMdisplaydate{2025}{8}{4}{-1}}
+\lhead{MVGA}
+\rhead{\dia}
+\cfoot{\thepage}
+
+% Transformando as páginas "plain" em "fancy"
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+% Definindo o ambiente do teorema
+\newtcbtheorem{teorema}{Teorema}{colback=cyan!5!white, colframe=cyan!50!black}{th}
+% Definindo o ambiente das questões
+\newtcbtheorem{qst}{Questão}{colback=blue!5!white, colframe=blue!50!black}{th}
+
+\title{\Huge{MVGA}\\\dia}
+\author{\huge{Eu mesmo}}
+\date{}
